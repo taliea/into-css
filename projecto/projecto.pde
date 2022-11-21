@@ -2,7 +2,7 @@
 yellow feet and a yellow beak. 
 */
 int r = 0;
-int u = 1;
+int u = -180;
 
 void setup(){
 size(300, 600);
@@ -65,8 +65,11 @@ line(90, 190, 190, 190);
 //moving flipper
 stroke(#080602);
 translate(220, 250);
-rotate(radians(r));
+rotate(radians(u));
 u +=-1;
+if( u== -210 ) {
+  u=-150;
+}
 //println("r: "+r);
 fill(#252023);
 rect(-25, -25, 55, 125);
