@@ -79,6 +79,7 @@ fill(0, 0, 0);
  
 
 //snow
+// borrowed this from random_quadrants cause it made more sense for partially fufilling guidelines
 noStroke();
 x = random(0, 600);
   y = random (0, 600);
@@ -88,6 +89,5 @@ x = random(0, 600);
      fill(255,255,255);
    }
    circle(x, y, 10);
- 
- 
+   
 }
