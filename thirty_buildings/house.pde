@@ -11,21 +11,23 @@ void setup() {
   //house(1550, 235, 3);
   //house(1800, 235, 3);
   //house(2050, 235, 3);
+  for(int row = 1; row <= 4; row = row +1){
   for (int h = 1; h <= 9; h = h + 1) {
-    house(h*250-200, 235, (int)random(1, 5));
+    house(h*250-200, 240 * row, (int)random(1, 5));
+  }
   }
   
-  for (int h = 1; h <= 9; h = h + 1) {
-    house(h*250-200, 450, (int)random(1, 5));
-  }
+  //for (int h = 1; h <= 9; h = h + 1) {
+  //  house(h*250-200, 480, (int)random(1, 5));
+  //}
   
-  for (int h = 1; h <= 9; h = h + 1) {
-    house(h*250-200, 690, (int)random(1, 6));
-  }
+  //for (int h = 1; h <= 9; h = h + 1) {
+  //  house(h*250-200, 720, (int)random(1, 6));
+  //}
   
-  for (int h = 1; h <= 9; h = h + 1) {
-    house(h*250-200, 900, (int)random(1, 5));
-  }
+  //for (int h = 1; h <= 9; h = h + 1) {
+  //  house(h*250-200, 960, (int)random(1, 5));
+  //}
 }
 
 
@@ -45,10 +47,8 @@ void house(float xLeft, float yTop, int numWindows) {
     rect (xLeft + 100 + h * step - 10, yTop+35, 20, 20);
   }
 
-
-
-  rect(xLeft+105, yTop+110, 20, 20);
-  rect(xLeft+195, yTop+110, 22, 20);
+  rect(xLeft+105, yTop+100, 20, 20);
+  rect(xLeft+195, yTop+100, 22, 20);
   //door
   rect(xLeft+145, yTop+100, 25, 39);
 
