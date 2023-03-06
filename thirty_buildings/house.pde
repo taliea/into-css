@@ -20,7 +20,7 @@ void setup() {
   }
   
   for (int h = 1; h <= 9; h = h + 1) {
-    house(h*250-200, 690, (int)random(1, 5));
+    house(h*250-200, 690, (int)random(1, 6));
   }
   
   for (int h = 1; h <= 9; h = h + 1) {
